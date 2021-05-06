@@ -680,14 +680,14 @@
         </geometry>
       </visual>
     </link>
-    <joint name="gripper_joint" type="prismatic">
+    <joint name="gripper_base_gripper_right_joint" type="prismatic">
       <child>gripper_gripper_right_link</child>
-      <parent>gripper_gripper_left_link</parent>
+      <parent>ur5_wrist_3_link</parent>
       <axis>
-        <xyz>-3e-06 0 1</xyz>
+        <xyz>0 0 1</xyz>
         <limit>
-          <lower>0.0065</lower>
-          <upper>0.109</upper>
+          <lower>0.0027</lower>
+          <upper>0.055</upper>
           <effort>1</effort>
           <velocity>0.42</velocity>
         </limit>
